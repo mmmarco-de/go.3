@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Color+Emoji:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --red: #de5833;
   --teal: #21808d;
-  --font: "Noto Emoji", "Noto Sans", sans-serif;
+  --font: "Noto Sans", "Noto Emoji", sans-serif;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -294,4 +294,3 @@ a:hover {
   border-color: var(--teal);
   background: var(--teal);
 }
-
