@@ -13,8 +13,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <h1 style="color: #de5833; font-size: 64pt;">go.3</h1>
-
   <h1 align="center">go.3</h1>
 
   <p align="center">
