@@ -1,0 +1,297 @@
+:root {
+  --red: #de5833;
+  --teal: #21808d;
+  --font: "Noto Emoji", "Noto Sans", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 0 1em;
+}
+
+h1 {
+  line-height: 1.2;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+h1 + p {
+  margin-top: 0;
+}
+
+h2 {
+  border-bottom: 1px solid #ddd;
+  font-weight: normal;
+}
+h3 {
+  border-bottom: 1px solid #ddd;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2.5rem 0 0;
+}
+
+a {
+  color: #00e;
+}
+a:visited {
+  color: #518;
+}
+a:hover,
+a:focus {
+  color: #03f;
+}
+
+.flr {
+  float: right;
+  padding: 0 0 8px 8px;
+}
+
+.w-100 {
+  max-width: 100px;
+}
+
+header {
+  margin: 1.5rem 0;
+}
+
+p code,
+ul code,
+ol code,
+blockquote code {
+  background: #f1f1f1;
+  padding: 2px;
+}
+
+#markdown-toc {
+  background: #f8f9fa;
+  padding: 10px 10px 10px 40px;
+  position: relative;
+}
+#markdown-toc::before {
+  border-bottom: 1px solid #ddd;
+  content: "Table of Contents";
+  display: block;
+  font-size: 24px;
+  margin: 0 0 10px -30px;
+}
+
+pre {
+  background: #f1f1f1;
+  overflow: auto;
+  padding: 8px;
+}
+
+blockquote {
+  border-left: 4px solid;
+  color: brown;
+  font-style: italic;
+  margin: 1rem 0;
+  padding: 0 0 0 8px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 2em 0;
+  text-align: left;
+  width: 100%;
+}
+table caption {
+  border-bottom: 1px solid;
+  font-size: 120%;
+  text-align: left;
+}
+table th,
+table td {
+  padding: 4px;
+}
+table tr:nth-of-type(even) {
+  background: #f1f1f1;
+}
+
+figure {
+  margin: 3rem 0;
+}
+figure img {
+  display: block;
+  margin: 0 auto;
+  padding: 4px;
+}
+figure figcaption {
+  font-size: 90%;
+  font-style: italic;
+  padding: 8px;
+  text-align: center;
+}
+
+.footnotes {
+  border-top: 1px solid;
+  font-size: 90%;
+  margin: 20px 0 10px;
+  padding: 10px 0;
+}
+
+footer {
+  border-top: 1px dotted;
+  margin: 4rem 0 2rem;
+  padding: 2rem 0;
+  position: relative;
+}
+footer > p {
+  margin-top: 0;
+}
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+footer nav ul li {
+  display: inline-block;
+  margin: 0 15px 10px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #9bf;
+  }
+  a:visited {
+    color: #a9f;
+  }
+  a:hover,
+  a:focus {
+    color: #9cf;
+  }
+  pre {
+    background: black;
+  }
+  p code,
+  ul code,
+  ol code,
+  blockquote code {
+    background: black;
+  }
+  table tr:nth-of-type(even) {
+    background: black;
+  }
+  #markdown-toc {
+    background: black;
+  }
+  #markdown-toc::before {
+    border-bottom: 1px solid #ddd;
+  }
+  blockquote {
+    color: lightgoldenrodyellow;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+[link] {
+  color: var(--red);
+}
+[link]:hover {
+  color: var(--red);
+}
+[link]:visited {
+  color: var(--red);
+}
+[link]:active {
+  color: var(--red);
+}
+[link2] {
+  color: var(--teal);
+}
+[link2]:hover {
+  color: var(--teal);
+}
+[link2]:visited {
+  color: var(--teal);
+}
+[link2]:active {
+  color: var(--teal);
+}
+
+[pill-btn] {
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-family: var(--font);
+}
+
+[pill-inp] {
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: white;
+  font-family: var(--font);
+}
+
+[pill-inp]::placeholder {
+  color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Slightly transparent white for the placeholder */
+}
+
+[home-btn] {
+  width: 40%;
+  border: 0;
+  font-size: xx-large;
+}
+
+[ai-btn] {
+  background: var(--teal);
+}
+
+[privacy-btn] {
+  background: var(--red);
+}
+
+[about-btn] {
+  font-size: large;
+}
+
+[inp-btn] {
+  width: 50%;
+}
+[inp-btn-red] {
+  width: 30%;
+  border-color: var(--red);
+  background: var(--red);
+}
+[inp-btn-teal] {
+  width: 30%;
+  border-color: var(--teal);
+  background: var(--teal);
+}
+

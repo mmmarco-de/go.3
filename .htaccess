@@ -1,0 +1,22 @@
+# Link Shortening Redirects
+RewriteEngine On
+RewriteRule ^sponsor$ https://ko-fi.com/mmmarcode [L,R=301]
+
+# Error Page Redirects
+ErrorDocument 404 /404.html
+
+# Spezifische Umleitungen für nicht existierende Dateien (.html, .md, .txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ /$1.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.md -f
+RewriteRule ^(.*)$ /$1.md [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.txt -f
+RewriteRule ^(.*)$ /$1.txt [L]
