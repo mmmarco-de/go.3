@@ -2,8 +2,7 @@
 <br />
 
 <div align="center">
-  <img src="./public/images/logo.png" width="128" height="128" alias="go.3 logo">
-  <h3 align="center">go.3</h3>
+  <h1 align="center">go.3</h1>
 
   <p align="center">
     go.3 is the successor of goPage.
